@@ -1,0 +1,91 @@
+; definicja procedury rysującej wieżę z zadanego miejsca
+; zakłada, że żółw patrzy "do góry" (czyli na północ) 
+; i jest w miejscu od którego ma zacząć rysowac główną częśc wieży
+; poniżej będzie jeszcze podstawa o wysokości takiej jak "wielkość zęba"
+; parametry:
+;        :wysokość - wysokość filaru wieży
+;        :wielkość_zęba - jakiej wielkości zrobić "zęby" na szczycie wieży
+;                         jest to również parametr określający wysokośc podstawy
+
+TO wieża :wysokość :wielkość_zęba
+	pendown 						; opuść
+ 	forward :wysokość 				; naprzód (w górę!!!!)
+	left 90							; lewo
+	forward :wielkość_zęba			; naprzód
+	right 90						; prawo
+	forward :wielkość_zęba			; naprzód
+	forward :wielkość_zęba			; naprzód (dwa razy bo to ten szczyt wieży)
+	right 90						; prawo
+	forward :wielkość_zęba			; naprzód 
+	right 90 						; prawo
+	forward :wielkość_zęba			; naprzód 
+	left 90
+	forward :wielkość_zęba
+	left 90
+	forward :wielkość_zęba 
+	right 90
+	forward :wielkość_zęba 
+	right 90
+	forward :wielkość_zęba 
+	left 90
+	forward :wielkość_zęba 
+	left 90
+	forward :wielkość_zęba 
+	right 90
+	forward :wielkość_zęba
+	right 90
+	forward :wielkość_zęba
+	left 90
+	forward :wielkość_zęba
+	left 90
+	forward :wielkość_zęba
+	right 90
+	forward :wielkość_zęba
+	right 90
+	forward :wielkość_zęba
+	forward :wielkość_zęba
+	right 90
+	forward :wielkość_zęba
+	left 90
+	forward :wysokość
+	left 90
+	forward :wielkość_zęba
+	right 90
+	forward :wielkość_zęba
+	right 90
+	forward :wielkość_zęba
+	forward :wielkość_zęba
+	forward :wielkość_zęba
+	forward :wielkość_zęba
+	forward :wielkość_zęba
+	forward :wielkość_zęba
+	forward :wielkość_zęba
+	right 90
+	forward :wielkość_zęba
+	right 90
+	forward :wielkość_zęba			; i ostatni "naprzód", koniec rysowania 
+									; obrysu wieży
+	penup							; podnieś
+	forward 10 						; naprzód (żółw wchodzi "do wieży")
+	fill							; wypełnij farbą. (zamaluj w logomocji)
+END
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+clearscreen							;wyczyść ekran
+setpencolor 8						;ustaw kolor jako brązowy 
+penup								;podnieś pisak
+   left 90							;nawigacja w lewy dolny róg ekranu
+   forward 200
+   left 90
+   forward 200
+   right 180
+wieża 320 20  						; pierwsza wieża
+   forward 140
+   left 90
+   forward 20
+wieża 260 20 						; druga wieża
+   forward 140
+   left 90
+   forward 20
+wieża 200 20 						; trzecia wieża
+hideturtle 							; i schowanie żółwia. (sż w logomocji)
