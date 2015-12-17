@@ -1,0 +1,84 @@
+oto wieża :wysokość :wielkość_zęba
+	opu						
+ 	np :wysokość 				
+	lw 90					
+	np :wielkość_zęba			
+	pw 90					
+	np :wielkość_zęba			
+	np :wielkość_zęba			
+	pw 90					
+	np :wielkość_zęba			
+	pw 90 					
+	np :wielkość_zęba			
+	lw 90
+	np :wielkość_zęba
+	lw 90
+	np :wielkość_zęba 
+	pw 90
+	np :wielkość_zęba 
+	pw 90
+	np :wielkość_zęba 
+	lw 90
+	np :wielkość_zęba 
+	lw 90
+	np :wielkość_zęba 
+	pw 90
+	np :wielkość_zęba
+	pw 90
+	np :wielkość_zęba
+	lw 90
+	np :wielkość_zęba
+	lw 90
+	np :wielkość_zęba
+	pw 90
+	np :wielkość_zęba
+	pw 90
+	np :wielkość_zęba
+	np :wielkość_zęba
+	pw 90
+	np :wielkość_zęba
+	lw 90
+	np :wysokość
+	lw 90
+	np :wielkość_zęba
+	pw 90
+	np :wielkość_zęba
+	pw 90
+	np :wielkość_zęba
+	np :wielkość_zęba
+	np :wielkość_zęba
+	np :wielkość_zęba
+	np :wielkość_zęba
+	np :wielkość_zęba
+	np :wielkość_zęba
+	pw 90
+	np :wielkość_zęba
+	pw 90
+	np :wielkość_zęba			
+	pod					
+	np 10 					
+	zamaluj					
+już
+
+cs							
+pod	
+ukp "brązowy						
+   lw 90						
+   np 200
+   lw 90
+   np 200
+   pw 180
+
+wieża 320 20
+
+   np 140
+   lw 90
+   np 20
+
+wieża 260 20
+
+   np 140
+   lw 90
+   np 20
+wieża 200 20
+sż
